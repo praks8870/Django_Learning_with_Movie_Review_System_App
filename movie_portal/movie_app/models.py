@@ -12,6 +12,9 @@ class Cineprof(models.Model):
     profile = models.TextField()
     dob = models.DateField()
 
+    def __str__(self):
+        return self.name
+
 class Movie(models.Model):
     """
     To store information about movies
